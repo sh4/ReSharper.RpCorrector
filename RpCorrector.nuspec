@@ -9,7 +9,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
     <description>Highlight the missing of ReactiveProperty ".Value" in XAML.</description>
-    <projectUrl>http://github.com/sh4/RpCorrector</projectUrl>
+    <projectUrl>https://github.com/sh4/ReSharper.RpCorrector</projectUrl>
     <copyright>Copyright &#x00a9; sh4</copyright>
     <tags>xaml reactiveproperty</tags>
     <releaseNotes></releaseNotes>
