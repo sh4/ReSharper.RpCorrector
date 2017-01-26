@@ -1,6 +1,5 @@
 ﻿using System;
 using JetBrains.Application.Progress;
-using JetBrains.Metadata.Reader.API;
 using JetBrains.ProjectModel;
 using JetBrains.ReSharper.Daemon.Stages.Dispatcher;
 using JetBrains.ReSharper.Daemon.Xaml.Highlightings;
@@ -76,6 +75,10 @@ namespace ReSharper.RpCorrector
         })]
     public class XamlBindingNameProblemAnalyzer : ElementProblemAnalyzer<IBindingMarkup>
     {
+        public XamlBindingNameProblemAnalyzer()
+        {
+            
+        }
         protected override void Run(IBindingMarkup element, ElementProblemAnalyzerData data, IHighlightingConsumer consumer)
         {
             var propertyExpression = element?.Path as IPropertyExpression;
@@ -88,17 +91,24 @@ namespace ReSharper.RpCorrector
             if (info.DeclaredElement.IsCSharpProperty() == false)
                 return;
             var property = info.DeclaredElement as IProperty;
-            var clrName = property?.ReturnType.GetScalarType()?.GetClrName();
-            if (clrName == null ||
-                clrName.GetNamespaceName() != "Reactive.Bindings" ||
-                clrName.ShortName != "ReactiveProperty")
-            {
+            var scalarType = property?.ReturnType?.GetScalarType();
+            if (scalarType == null)
                 return;
-            }
+            if (IsSuperTypeByCLRName("Reactive.Bindings.IReadOnlyReactiveProperty", scalarType) == false)
+                return;
 
-            // .Value の付け忘れなので警告する
             var highlighting = new XamlMisassignedBindingReactivePropertyHighlighting(propertyReference);
             consumer.AddHighlighting(highlighting);
+        }
+
+        private bool IsSuperTypeByCLRName(string clrName, IDeclaredType type)
+        {
+            var interfaceType = TypeFactory.CreateTypeByCLRName(clrName, type.Module)?.GetTypeElement();
+            if (interfaceType == null)
+                return false;
+            if (type.GetSuperType(interfaceType).IsEmpty())
+                return false;
+            return true;
         }
     }
 }
