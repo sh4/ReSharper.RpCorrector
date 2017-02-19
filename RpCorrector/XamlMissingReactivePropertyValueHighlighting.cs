@@ -14,7 +14,6 @@ namespace ReSharper.RpCorrector
         public XamlMissingReactivePropertyValueHighlighting(IMarkupPropertyReference reference)
             : base(reference, CreateTooltip(reference))
         {
-            
         }
 
         private static string CreateTooltip(IMarkupPropertyReference reference)
@@ -22,10 +21,7 @@ namespace ReSharper.RpCorrector
             var languageType = ReferenceUtil.GetProjectLanguage(reference.GetTreeNode());
             if (languageType.IsNullOrUnknown())
                 return $"Cannot resolve symbol '{reference.GetName()}'";
-
-            return string.Format(
-                "'.Value' is not specified ReactiveProperty field or property '{0}'",
-                reference.GetName());
+            return $"'.Value' is not specified ReactiveProperty field or property '{reference.GetName()}'";
         }
     }
 }

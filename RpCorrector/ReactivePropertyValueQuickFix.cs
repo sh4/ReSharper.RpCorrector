@@ -28,14 +28,7 @@ namespace ReSharper.RpCorrector
             return null;
         }
 
-        public override string Text
-        {
-            get { return "Add '.Value' to ReactiveProperty field or property"; }
-        }
-
-        public override bool IsAvailable(IUserDataHolder cache)
-        {
-            return _reference != null;
-        }
+        public override string Text => "Add '.Value' to ReactiveProperty field or property";
+        public override bool IsAvailable(IUserDataHolder cache) => _reference != null;
     }
 }
