@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>ReSharper.RpCorrector</id>
-    <version>2017.1</version>
+    <version>2017.1.1</version>
     <authors>sh4</authors>
     <owners>sh4</owners>
     <title>ReactiveProperty XAML Binding Corrector</title>
@@ -18,6 +18,6 @@
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\Release\ReSharper.RpCorrector.dll" target="DotFiles" />
+    <file src="bin\2017.1.Release\ReSharper.RpCorrector.dll" target="DotFiles" />
   </files>
 </package>

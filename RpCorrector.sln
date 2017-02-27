@@ -1,20 +1,32 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26020.0
+VisualStudioVersion = 15.0.26206.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReSharper.RpCorrector", "RpCorrector\ReSharper.RpCorrector.csproj", "{B253EBCE-AC46-49B7-88A7-E268B7B91089}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RpCorrector.2017", "RpCorrector\RpCorrector.2017.csproj", "{B253EBCE-AC46-49B7-88A7-E268B7B91089}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RpCorrector.2016", "RpCorrector\RpCorrector.2016.csproj", "{15882D18-3675-4E18-B9BF-C964A57629FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
+		2016.2.Debug|Any CPU = 2016.2.Debug|Any CPU
+		2016.2.Release|Any CPU = 2016.2.Release|Any CPU
+		2017.1.Debug|Any CPU = 2017.1.Debug|Any CPU
+		2017.1.Release|Any CPU = 2017.1.Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{B253EBCE-AC46-49B7-88A7-E268B7B91089}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B253EBCE-AC46-49B7-88A7-E268B7B91089}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B253EBCE-AC46-49B7-88A7-E268B7B91089}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B253EBCE-AC46-49B7-88A7-E268B7B91089}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B253EBCE-AC46-49B7-88A7-E268B7B91089}.2016.2.Debug|Any CPU.ActiveCfg = 2017.1.Debug|Any CPU
+		{B253EBCE-AC46-49B7-88A7-E268B7B91089}.2016.2.Release|Any CPU.ActiveCfg = 2017.1.Release|Any CPU
+		{B253EBCE-AC46-49B7-88A7-E268B7B91089}.2017.1.Debug|Any CPU.ActiveCfg = 2017.1.Debug|Any CPU
+		{B253EBCE-AC46-49B7-88A7-E268B7B91089}.2017.1.Debug|Any CPU.Build.0 = 2017.1.Debug|Any CPU
+		{B253EBCE-AC46-49B7-88A7-E268B7B91089}.2017.1.Release|Any CPU.ActiveCfg = 2017.1.Release|Any CPU
+		{B253EBCE-AC46-49B7-88A7-E268B7B91089}.2017.1.Release|Any CPU.Build.0 = 2017.1.Release|Any CPU
+		{15882D18-3675-4E18-B9BF-C964A57629FC}.2016.2.Debug|Any CPU.ActiveCfg = 2016.2.Debug|Any CPU
+		{15882D18-3675-4E18-B9BF-C964A57629FC}.2016.2.Debug|Any CPU.Build.0 = 2016.2.Debug|Any CPU
+		{15882D18-3675-4E18-B9BF-C964A57629FC}.2016.2.Release|Any CPU.ActiveCfg = 2016.2.Release|Any CPU
+		{15882D18-3675-4E18-B9BF-C964A57629FC}.2016.2.Release|Any CPU.Build.0 = 2016.2.Release|Any CPU
+		{15882D18-3675-4E18-B9BF-C964A57629FC}.2017.1.Debug|Any CPU.ActiveCfg = 2016.2.Debug|Any CPU
+		{15882D18-3675-4E18-B9BF-C964A57629FC}.2017.1.Release|Any CPU.ActiveCfg = 2016.2.Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
