@@ -35,8 +35,7 @@ namespace ReSharper.RpCorrector
 
         private static IMarkupPropertyReference GetMarkupPropertyReference(IBindingMarkup element)
         {
-            var propertyExpression = element?.Path as IPropertyExpression;
-            if (propertyExpression == null || propertyExpression.Dot != null)
+            if (!(element?.Path is IPropertyExpression propertyExpression) || propertyExpression.Dot != null)
                 return null;
             return propertyExpression.PropertyReference as IMarkupPropertyReference;
         }
