@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>ReSharper.RpCorrector</id>
-    <version>2018.2.0</version>
+    <version>2018.3.0</version>
     <authors>sh4</authors>
     <owners>sh4</owners>
     <title>ReactiveProperty XAML Binding Corrector</title>
@@ -14,10 +14,10 @@
     <tags>xaml reactiveproperty</tags>
     <releaseNotes></releaseNotes>
     <dependencies>
-      <dependency id="Wave" version="182.0" />
+      <dependency id="Wave" version="183.0" />
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\2018.1.Release\ReSharper.RpCorrector.dll" target="DotFiles" />
+    <file src="bin\Release\net461\ReSharper.RpCorrector.dll" target="DotFiles" />
   </files>
 </package>
