@@ -2,22 +2,22 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
   <metadata>
     <id>ReSharper.RpCorrector</id>
-    <version>2018.3.0</version>
+    <version>2019.1.0</version>
     <authors>sh4</authors>
     <owners>sh4</owners>
     <title>ReactiveProperty XAML Binding Corrector</title>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <licenseUrl>https://opensource.org/licenses/MIT</licenseUrl>
+    <license type="expression">MIT</license>
     <description>Highlight the missing of ReactiveProperty ".Value" in XAML.</description>
     <projectUrl>https://github.com/sh4/ReSharper.RpCorrector</projectUrl>
     <copyright>Copyright &#x00a9; sh4</copyright>
     <tags>xaml reactiveproperty</tags>
     <releaseNotes></releaseNotes>
     <dependencies>
-      <dependency id="Wave" version="183.0" />
+      <dependency id="Wave" version="190.0" />
     </dependencies>
   </metadata>
   <files>
-    <file src="bin\2018.Release\net461\ReSharper.RpCorrector.dll" target="DotFiles" />
+    <file src="bin\2019.Release\net461\ReSharper.RpCorrector.dll" target="DotFiles" />
   </files>
 </package>

@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RpCorrector.2016", "RpCorre
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpCorrector.2018", "RpCorrector\RpCorrector.2018.csproj", "{626C7E07-39F8-4F29-8A1B-0C39F52B634B}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RpCorrector.2019", "RpCorrector\RpCorrector.2019.csproj", "{63F789DF-42C9-4CAB-8FFC-1BD83562A7F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,14 +21,18 @@ Global
 		{B253EBCE-AC46-49B7-88A7-E268B7B91089}.Debug|Any CPU.Build.0 = 2017.3.Debug|Any CPU
 		{B253EBCE-AC46-49B7-88A7-E268B7B91089}.Release|Any CPU.ActiveCfg = 2017.3.Release|Any CPU
 		{B253EBCE-AC46-49B7-88A7-E268B7B91089}.Release|Any CPU.Build.0 = 2017.3.Release|Any CPU
-		{15882D18-3675-4E18-B9BF-C964A57629FC}.Debug|Any CPU.ActiveCfg = 2016.2.Release|Any CPU
-		{15882D18-3675-4E18-B9BF-C964A57629FC}.Debug|Any CPU.Build.0 = 2016.2.Release|Any CPU
+		{15882D18-3675-4E18-B9BF-C964A57629FC}.Debug|Any CPU.ActiveCfg = 2016.2.Debug|Any CPU
+		{15882D18-3675-4E18-B9BF-C964A57629FC}.Debug|Any CPU.Build.0 = 2016.2.Debug|Any CPU
 		{15882D18-3675-4E18-B9BF-C964A57629FC}.Release|Any CPU.ActiveCfg = 2016.2.Release|Any CPU
 		{15882D18-3675-4E18-B9BF-C964A57629FC}.Release|Any CPU.Build.0 = 2016.2.Release|Any CPU
-		{626C7E07-39F8-4F29-8A1B-0C39F52B634B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{626C7E07-39F8-4F29-8A1B-0C39F52B634B}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{626C7E07-39F8-4F29-8A1B-0C39F52B634B}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{626C7E07-39F8-4F29-8A1B-0C39F52B634B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{626C7E07-39F8-4F29-8A1B-0C39F52B634B}.Debug|Any CPU.ActiveCfg = 2018.Debug|Any CPU
+		{626C7E07-39F8-4F29-8A1B-0C39F52B634B}.Debug|Any CPU.Build.0 = 2018.Debug|Any CPU
+		{626C7E07-39F8-4F29-8A1B-0C39F52B634B}.Release|Any CPU.ActiveCfg = 2018.Release|Any CPU
+		{626C7E07-39F8-4F29-8A1B-0C39F52B634B}.Release|Any CPU.Build.0 = 2018.Release|Any CPU
+		{63F789DF-42C9-4CAB-8FFC-1BD83562A7F0}.Debug|Any CPU.ActiveCfg = 2019.Debug|Any CPU
+		{63F789DF-42C9-4CAB-8FFC-1BD83562A7F0}.Debug|Any CPU.Build.0 = 2019.Debug|Any CPU
+		{63F789DF-42C9-4CAB-8FFC-1BD83562A7F0}.Release|Any CPU.ActiveCfg = 2019.Release|Any CPU
+		{63F789DF-42C9-4CAB-8FFC-1BD83562A7F0}.Release|Any CPU.Build.0 = 2019.Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
